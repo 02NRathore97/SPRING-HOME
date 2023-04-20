@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean class="com.rays.springcore.Student" name="student1"> 
+			<property name="studentId"> 
+				<value>101</value> 
+			</property> 
+			<property name="studentName"> 
+				<value>Neeraj</value> 
+			</property> 
+			<property name="studentAddress"> 
+				<value>Indore</value> 
+			</property> 
+		</bean> -->
+
+
+	<!-- using value Attribute -->
+	<!-- <bean class="com.rays.springcore.Student" name="student1"> 
+			<property name="studentId" value="101"/> 
+			<property name="studentName" value="Neeraj"/> 
+			<property name="studentAddress" value="Indore"/> 
+		</bean> -->
+
+
+	<!-- using p schema-->
+	<bean class="com.rays.springcore.Student" name="student1"
+		p:studentId="101" p:studentName="Neeraj" p:studentAddress="Indore" />
+	<bean class="com.rays.springcore.Student" name="student2"
+		p:studentId="102" p:studentName="Amit" p:studentAddress="Indore" />
+
+</beans>

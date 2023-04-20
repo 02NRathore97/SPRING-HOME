@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ https://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+
+	 <bean class="com.rays.springcore.ci.Certi" name="cer">
+		<constructor-arg value="JAVA" />
+	</bean> 
+	
+	<!-- <bean class="com.rays.springcore.ci.Certi" name="cer" c:name="JAVA Language" /> -->
+	
+	
+	<bean class="com.rays.springcore.ci.Person" name="person">
+		<!-- <constructor-arg>
+			<value>Neeraj</value>
+		</constructor-arg> -->
+		
+		<constructor-arg value="Neeraj" />
+		 <constructor-arg value="12" />
+		 <constructor-arg ref="cer" />
+		 <constructor-arg>
+		 	<list>
+		 		<value>1</value>
+		 		<value>2</value>
+		 		<value>3</value>
+		 	</list>
+		 </constructor-arg>
+		 <!-- <constructor-arg value="12" type="int"/> -->
+	</bean>
+</beans>

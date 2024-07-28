@@ -1,0 +1,13 @@
+package com.meet.methodchaning;
+
+public class Person {
+	private int id;
+	private String name;
+	private int age;
+	
+	private Person() {
+	System.out.println("This is private constructor...");
+	
+	}
+	
+}

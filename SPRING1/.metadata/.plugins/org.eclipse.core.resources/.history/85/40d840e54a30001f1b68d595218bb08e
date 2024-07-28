@@ -1,0 +1,10 @@
+package com.meet.methodchaning;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Student student = new Student();
+		Student student1 = student.setId(1).setName("Neeraj").setAge(27);
+		System.out.println(studnet1);
+	}
+}
